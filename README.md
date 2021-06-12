@@ -1,5 +1,5 @@
 # Ian Matheus da Cunha
-Desenvolvedor Web - Front-end.
+Desenvolvedor Web - Front-end
 
 :house:    Recife/PE <br>
 :iphone:   (81) 99464-0585 <br>
