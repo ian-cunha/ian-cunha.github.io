@@ -15,25 +15,13 @@ Em andamento
 
 
 ## Experência Profissional
-* (2017 -  Atual) <br>
-**IFRN - Campus Natal Central** -
-Estagiário na Diretoria de Pesquisa e Extensão do Campus (DIPEQ).
-  * Colaborar no desenvolvimento do projeto que monitora a evasão escolar do Campus.
-  * Corrigir bugs no projeto e desenvolver novas funcionalidades.
-
-
-* (2015 -  2016) <br>
-**Prefeitura de São Gonçalo do Amarante** -
-Estagiário na Subsecretaria de Tecnologia da Informação e Ciência (SETIC).
-  * Colaborar no desenvolvimento dos projetos da Prefeitura.
-  * Corrigir pequenos bugs no Front-end e no Back-end.
-
-
-* (2013 -  2015) <br>
-**IFRN - Campus São Gonçalo do Amarante** -
-Monitor na disciplina de Algoritmo e Programação de Computadores (Estruturada e Orientada a Objetos).
-  * Ser responsável pelo laboratório utilizado pelos alunos.
-  * Solucionar dúvidas referentes as disciplinas.
+* (2021 -  Atual) <br>
+Estagiário em Desenvolvimento front-end
+Nome da empresaMARTA Inteligência Imobiliária Estágio
+Período do empregojan. de 2021 – o momento
+Duração6 meses
+LocalidadeRecife, Pernambuco, Brasil
+As a front end, developing Landing pages for real estate sales, using PHP, JavaScript, Boostrap and Invision.
 
 ## Conhecimentos
 
