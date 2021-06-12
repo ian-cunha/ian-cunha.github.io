@@ -5,7 +5,7 @@ Desenvolvedor Web - Front-end
 :iphone:   (81) 99464-0585 <br>
 :envelope:  contatoiancunha@gmail.com
 
-Meu nome é David Allysson, sou Desenvolvedor Web apaixonado por PHP e Material Design, com grande interesse em Javascript e Bootstrap. Músico nas horas vagas, adoro acampar, ler e estudo psicologia como hobbie.
+Meu nome é Ian, sou Desenvolvedor Web apaixonado, com grande interesse em Angular e JavaScript. adoro acampar, ler e estudo astronomia como hobbie.
 
 ## Formação
 Estácio, Análise e desenvolvimento de sistemas <br>
