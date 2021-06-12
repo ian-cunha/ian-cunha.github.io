@@ -9,9 +9,7 @@ Meu nome é David Allysson, sou Desenvolvedor Web apaixonado por PHP e Material 
 
 ## Formação
 Estácio, Análise e desenvolvimento de sistemas <br>
-Em andamento
-
-[_Clique aqui para ver as disciplinas do curso._](DISCIPLINAS.md#técnico-em-informática)
+Em andamento...
 
 
 ## Experência Profissional
