@@ -17,13 +17,9 @@ Em andamento
 ## Experência Profissional
 * (2021 -  Atual) <br>
 Estagiário em Desenvolvimento front-end
-Nome da empresaMARTA Inteligência Imobiliária Estágio
-Período do empregojan. de 2021 – o momento
-Duração6 meses
+MARTA Inteligência Imobiliária Estágio
 LocalidadeRecife, Pernambuco, Brasil
-As a front end, developing Landing pages for real estate sales, using PHP, JavaScript, Boostrap and Invision.
-
-## Conhecimentos
+Como front-end, desenvolvendo landing pages para vendas de imóveis, usando PHP, JavaScript, Boostrap e Invision.
 
 ### Gerais
 * Lógica de Programação.
@@ -35,10 +31,7 @@ As a front end, developing Landing pages for real estate sales, using PHP, JavaS
 
 ### Front-end
 * HTML.
-  * Markdown.
 * CSS (Design Responsivo).
-  * SASS
-  * Arquitetura BEM
 
 ### UI Kits
 * Angular Material.
@@ -46,6 +39,7 @@ As a front end, developing Landing pages for real estate sales, using PHP, JavaS
 
 ### Frameworks Front-end
 * Angular
+* React
 
 ### Linguagens de Programação
 * JavaScript.
