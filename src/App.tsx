@@ -303,7 +303,7 @@ const App: React.FC = () => {
               <JobDate>jan de 2021 - dez de 2021</JobDate>
               <JobDesc>
                 Desenvolvimento Web e UI/UX focado em landing pages imobiliárias em
-                PHP/JavaScript. fazendo integrações, manutenção e colaborando com
+                PHP/JavaScript. Fazendo integrações, manutenção e colaborando com
                 design e marketing.
               </JobDesc>
             </ExpDetails>
