@@ -25,8 +25,8 @@ const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem auto;
-  padding: 2rem 1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
   max-width: 800px;
 
   @media (min-width: 768px) {
@@ -35,7 +35,6 @@ const Main = styled.main`
 `;
 
 const Section = styled.section`
-  margin-top: 1.5rem;
   color: #ffffff;
   width: 100%;
 `;
