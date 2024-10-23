@@ -7,6 +7,7 @@ import react from './assets/react.svg'
 import reactnative from './assets/react-native.svg'
 import typescript from './assets/typescript.svg'
 import figma from './assets/figma.svg'
+import sql from './assets/sql.svg'
 import php from './assets/php.svg'
 
 import englishIcon from './assets/english.svg';
@@ -334,6 +335,9 @@ const App: React.FC = () => {
           </SkillItem>
           <SkillItem>
             <SkillImg alt="Figma" src={figma} />
+          </SkillItem>
+          <SkillItem>
+            <SkillImg alt="SQL" src={sql} />
           </SkillItem>
           <SkillItem>
             <SkillImg alt="PHP" src={php} />
