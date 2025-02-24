@@ -263,12 +263,12 @@ const App: React.FC = () => {
         <Location>Pernambuco, Brasil</Location>
         <Divider />
         <About>
-        Desenvolvedor Mobile e Full Stack com sólida expertise em React Native, React, Python e NoSQL
-        Especializado no desenvolvimento de soluções digitais inovadoras, desde aplicativos móveis e sistemas robustos até landing pages de alta conversão. Apaixonado por transformar ideias em produtos funcionais, com foco em usabilidade, design intuitivo e desempenho excepcional.
+          Desenvolvedor Mobile e Full Stack com sólida expertise em React Native, React, Python e NoSQL
+          Especializado no desenvolvimento de soluções digitais inovadoras, desde aplicativos móveis e sistemas robustos até landing pages de alta conversão. Apaixonado por transformar ideias em produtos funcionais, com foco em usabilidade, design intuitivo e desempenho excepcional.
         </About>
       </Section>
       <ExpSection>
-        <ExpTitle>WORK EXPERIENCE</ExpTitle>
+        <ExpTitle>EXPERIÊNCIAS</ExpTitle>
         <ExpList>
           <ExpItem>
             <ExpDetails>
@@ -319,7 +319,7 @@ const App: React.FC = () => {
         </ExpList>
       </ExpSection>
       <SkillsSection>
-        <SkillsTitle>MAIN SKILLS</SkillsTitle>
+        <SkillsTitle>PRINCIPAIS HABILIDADES</SkillsTitle>
         <SkillsContainer>
           <SkillItem>
             <SkillImg alt="React Native" src={reactnative} />
@@ -342,13 +342,13 @@ const App: React.FC = () => {
         </SkillsContainer>
       </SkillsSection>
       <LanguagesSection>
-        <LanguagesTitle>LANGUAGES</LanguagesTitle>
+        <LanguagesTitle>IDIOMAS</LanguagesTitle>
         <LanguagesList>
-          <LanguageItem data-tooltip="Intermediário">
-            <img alt="Inglês" src={englishIcon} />
-          </LanguageItem>
           <LanguageItem data-tooltip="Fluente">
             <img alt="Português" src={portugueseIcon} />
+          </LanguageItem>
+          <LanguageItem data-tooltip="Intermediário">
+            <img alt="Inglês" src={englishIcon} />
           </LanguageItem>
           <LanguageItem data-tooltip="Iniciante">
             <img alt="Espanhol" src={spanishIcon} />
