@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 import verified from './assets/verified.svg'
 
-import react from './assets/react.svg'
 import reactnative from './assets/react-native.svg'
-import typescript from './assets/typescript.svg'
+import javascript from './assets/javascript.svg'
 import figma from './assets/figma.svg'
 import sql from './assets/sql.svg'
-import php from './assets/php.svg'
+import python from './assets/python.svg'
+import java from './assets/java.svg'
 
 import englishIcon from './assets/english.svg';
 import portugueseIcon from './assets/portuguese.svg';
@@ -319,16 +319,16 @@ const App: React.FC = () => {
         </ExpList>
       </ExpSection>
       <SkillsSection>
-        <SkillsTitle>SKILLS</SkillsTitle>
+        <SkillsTitle>MAIN SKILLS</SkillsTitle>
         <SkillsContainer>
           <SkillItem>
             <SkillImg alt="React Native" src={reactnative} />
           </SkillItem>
           <SkillItem>
-            <SkillImg alt="React" src={react} />
+            <SkillImg alt="Python" src={python} />
           </SkillItem>
           <SkillItem>
-            <SkillImg alt="Typescript" src={typescript} />
+            <SkillImg alt="JavaScript" src={javascript} />
           </SkillItem>
           <SkillItem>
             <SkillImg alt="Figma" src={figma} />
@@ -337,7 +337,7 @@ const App: React.FC = () => {
             <SkillImg alt="SQL" src={sql} />
           </SkillItem>
           <SkillItem>
-            <SkillImg alt="PHP" src={php} />
+            <SkillImg alt="Java" src={java} />
           </SkillItem>
         </SkillsContainer>
       </SkillsSection>
