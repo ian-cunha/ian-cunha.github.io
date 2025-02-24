@@ -263,10 +263,8 @@ const App: React.FC = () => {
         <Location>Pernambuco, Brasil</Location>
         <Divider />
         <About>
-          Olá, sou Ian, Desenvolvedor Full Stack e UX/UI Designer com expertise em React,
-          React Native, NoSQL, PHP entre outros. Proficiente em desenvolver landing pages,
-          aplicativos móveis, sistemas, e no design de interfaces utilizando Figma, sempre
-          com um forte enfoque na inovação e usabilidade.
+        Desenvolvedor Mobile e Full Stack com sólida expertise em React Native, React, Python e NoSQL
+        Especializado no desenvolvimento de soluções digitais inovadoras, desde aplicativos móveis e sistemas robustos até landing pages de alta conversão. Apaixonado por transformar ideias em produtos funcionais, com foco em usabilidade, design intuitivo e desempenho excepcional.
         </About>
       </Section>
       <ExpSection>
@@ -274,11 +272,11 @@ const App: React.FC = () => {
         <ExpList>
           <ExpItem>
             <ExpDetails>
-              <JobTitle>Desenvolvedor FullStack</JobTitle>
+              <JobTitle>Desenvolvedor Full Stack/Mobile</JobTitle>
               <JobCompany>Real Estate AI Planner</JobCompany>
               <JobDate>mai de 2024 - o momento</JobDate>
               <JobDesc>
-                Desenvolvedor React, React Native, PHP e UX/UI Designer,
+                Desenvolvedor React Native, React, PHP e UX/UI Designer,
                 focado na criação de soluções digitais inovadoras.
               </JobDesc>
             </ExpDetails>
