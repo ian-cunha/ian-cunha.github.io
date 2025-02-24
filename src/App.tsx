@@ -20,7 +20,9 @@ import githubIcon from './assets/github.svg';
 import linkedinIcon from './assets/linkedin.svg';
 import xIcon from './assets/x.svg';
 
-const Main = styled.main`
+import { motion } from 'framer-motion';
+
+const Main = styled(motion.main)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +30,8 @@ const Main = styled.main`
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 800px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  min-height: 100vh;
 
   @media (min-width: 768px) {
     padding: 3rem;
@@ -94,24 +98,30 @@ const ExpItem = styled.li`
   position: relative;
   margin-bottom: 2rem;
   color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   &:before {
     content: '';
     position: absolute;
     left: 0.5rem;
     top: 1rem;
-    height: calc(100% + 1rem);
+    height: calc(80% + 1rem);
     width: 2px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.2), #00ff00);
-  }
-
-  &:first-of-type:before {
-    background: #ffffff;
   }
 `;
 
 const ExpDetails = styled.div`
   margin-left: 2rem;
+  margin-right: 1rem;
 `;
 
 const JobTitle = styled.h3`
@@ -150,8 +160,9 @@ const SkillsTitle = styled.h2`
 `;
 
 const SkillsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 1.5rem;
   max-width: 100%;
 `;
@@ -225,12 +236,12 @@ const LinksList = styled.ul`
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   flex-wrap: wrap;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: wrap;
+    gap: 2rem;
   }
 `;
 
@@ -254,20 +265,41 @@ const LinkItem = styled.li`
 
 const App: React.FC = () => {
   return (
-    <Main>
+    <Main
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}>
       <Section>
         <Header>
-          <Title>Ian Cunha</Title>
+          <Title
+            as={motion.h1}
+            initial={{ x: -100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}>
+            Ian Cunha</Title>
           <VerifiedImg alt="verified" src={verified} />
         </Header>
-        <Location>Pernambuco, Brasil</Location>
+        <Location
+          as={motion.span}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}>
+          Pernambuco, Brasil</Location>
         <Divider />
-        <About>
+        <About
+          as={motion.p}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.6 }}>
           Desenvolvedor Mobile e Full Stack com sólida expertise em React Native, React, Python e NoSQL
           Especializado no desenvolvimento de soluções digitais inovadoras, desde aplicativos móveis e sistemas robustos até landing pages de alta conversão. Apaixonado por transformar ideias em produtos funcionais, com foco em usabilidade, design intuitivo e desempenho excepcional.
         </About>
       </Section>
-      <ExpSection>
+      <ExpSection
+        as={motion.p}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.7 }}>
         <ExpTitle>EXPERIÊNCIAS</ExpTitle>
         <ExpList>
           <ExpItem>
@@ -318,7 +350,11 @@ const App: React.FC = () => {
           </ExpItem>
         </ExpList>
       </ExpSection>
-      <SkillsSection>
+      <SkillsSection
+        as={motion.p}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}>
         <SkillsTitle>PRINCIPAIS HABILIDADES</SkillsTitle>
         <SkillsContainer>
           <SkillItem>
@@ -341,7 +377,11 @@ const App: React.FC = () => {
           </SkillItem>
         </SkillsContainer>
       </SkillsSection>
-      <LanguagesSection>
+      <LanguagesSection
+        as={motion.p}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.8 }}>
         <LanguagesTitle>IDIOMAS</LanguagesTitle>
         <LanguagesList>
           <LanguageItem data-tooltip="Fluente">
@@ -355,7 +395,11 @@ const App: React.FC = () => {
           </LanguageItem>
         </LanguagesList>
       </LanguagesSection>
-      <LinksSection>
+      <LinksSection
+        as={motion.p}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.9 }}>
         <LinksTitle>LINKS</LinksTitle>
         <LinksList>
           <LinkItem>
