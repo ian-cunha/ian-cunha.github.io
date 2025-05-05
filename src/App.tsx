@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { motion } from 'framer-motion';
 
+// Importações existentes
 import verified from './assets/verified.svg';
 import reactnative from './assets/react-native.svg';
 import javascript from './assets/javascript.svg';
@@ -18,11 +19,25 @@ import githubIcon from './assets/github.svg';
 import linkedinIcon from './assets/linkedin.svg';
 import xIcon from './assets/x.svg';
 
+// Importações para projetos
+import fenixConnectImg from './assets/projects/fenixconnect.png';
+import suapeVisionImg from './assets/projects/suapevision.png';
+import tamassaImg from './assets/projects/tamassa.png';
+
+// Importações para premiações
+import innovareImg from './assets/awards/innovare.png';
+import kaririImg from './assets/awards/kariri.png';
+import suapeImg from './assets/awards/suapevisionpremio.png';
+
+// Ícone para certificações
+import certificateIcon from './assets/certificate.svg';
+
 const lightTheme = {
   background: '#ffffff',
   text: '#000000',
   secondaryText: '#666666',
   accent: '#00ff00',
+  card: '#f5f5f5',
 };
 
 const darkTheme = {
@@ -30,6 +45,7 @@ const darkTheme = {
   text: '#ffffff',
   secondaryText: '#a1a1aa',
   accent: '#00ff00',
+  card: '#2a2a2a',
 };
 
 const Main = styled(motion.main)`
@@ -273,6 +289,210 @@ const LinkItem = styled.li`
   }
 `;
 
+// Componentes para a seção de Projetos
+const ProjectsSection = styled.div`
+  margin-top: 2.5rem;
+  width: 100%;
+`;
+
+const ProjectsTitle = styled.h2`
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: ${(props) => props.theme.text};
+`;
+
+const ProjectsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+`;
+
+const ProjectCard = styled.div`
+  background: ${(props) => props.theme.card};
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+`;
+
+const ProjectImage = styled.img`
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+`;
+
+const ProjectContent = styled.div`
+  padding: 1rem;
+`;
+
+const ProjectTitle = styled.h3`
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: ${(props) => props.theme.text};
+`;
+
+const ProjectDescription = styled.p`
+  font-size: 0.9rem;
+  color: ${(props) => props.theme.secondaryText};
+  line-height: 1.4;
+`;
+
+const ProjectLink = styled.a`
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: ${(props) => props.theme.accent};
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+// Componentes para a seção de Premiações
+const AwardsSection = styled.div`
+  margin-top: 2.5rem;
+  width: 100%;
+`;
+
+const AwardsTitle = styled.h2`
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: ${(props) => props.theme.text};
+`;
+
+const AwardsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+`;
+
+const AwardCard = styled.div`
+  background: ${(props) => props.theme.card};
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+`;
+
+const AwardImage = styled.img`
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+`;
+
+const AwardContent = styled.div`
+  padding: 1rem;
+`;
+
+const AwardTitle = styled.h3`
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: ${(props) => props.theme.text};
+`;
+
+const AwardDescription = styled.p`
+  font-size: 0.9rem;
+  color: ${(props) => props.theme.secondaryText};
+  line-height: 1.4;
+`;
+
+const AwardDate = styled.span`
+  display: block;
+  font-size: 0.85rem;
+  color: ${(props) => props.theme.secondaryText};
+  margin-top: 0.5rem;
+`;
+
+// Componentes para a seção de Certificações
+const CertificationsSection = styled.div`
+  margin-top: 2.5rem;
+  width: 100%;
+`;
+
+const CertificationsTitle = styled.h2`
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: ${(props) => props.theme.text};
+`;
+
+const CertificationsList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+`;
+
+const CertificationItem = styled.li`
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: ${(props) => props.theme.card};
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateX(5px);
+  }
+`;
+
+const CertificationIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+`;
+
+const CertIconImg = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+const CertificationInfo = styled.div`
+  flex: 1;
+`;
+
+const CertificationName = styled.h3`
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: ${(props) => props.theme.text};
+`;
+
+const CertificationIssuer = styled.p`
+  font-size: 0.85rem;
+  color: ${(props) => props.theme.secondaryText};
+  margin: 0.25rem 0 0;
+`;
+
+const CertificationLink = styled.a`
+  color: ${(props) => props.theme.accent};
+  margin-left: auto;
+  text-decoration: none;
+  font-size: 1.25rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const ThemeToggleButton = styled.button`
   position: absolute;
   top: 1rem;
@@ -294,6 +514,81 @@ const App: React.FC = () => {
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => !prevMode);
   };
+
+  const projects = [
+    {
+      id: 1,
+      title: "Fenix Connect",
+      description: "O FenixConnect, é uma plataforma de cursos destinada a egressos e seus familiares. Desenvolvido em React Native e integrado ao Firebase.",
+      image: fenixConnectImg,
+      link: "https://fenixconnect.com.br"
+    },
+    {
+      id: 2,
+      title: "SUAPE Vision",
+      description: "O SUAPE Vision é uma API desenvolvida em Python para gerenciar dados dos navios. Ela fornece dados para acessar informações em tempo real de saída e entrada.",
+      image: suapeVisionImg,
+      link: "https://github.com/ian-cunha/suape-vision-py"
+    },
+    {
+      id: 3,
+      title: "Tá Massa",
+      description: "Totem que ajuda na manutenção de áreas públicas, permitindo que os cidadãos registrem problemas e solicitem serviços.",
+      image: tamassaImg,
+      link: "https://www.linkedin.com/posts/iancunha_conquista-hackaton-recife-activity-7000205363929059328-CHzy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8mURgBXqpvqJqW1JpNbEOhc9Fj6etsFxE"
+    }
+  ];
+
+  const awards = [
+    {
+      id: 1,
+      title: "Prêmio Innovare",
+      description: "Finalista do Prêmio Innovare na categoria Justiça e Cidadania com o projeto Fenix Connect.",
+      image: innovareImg,
+      date: "2024"
+    },
+    {
+      id: 2,
+      title: "Hackathon Cidadão 9.0",
+      description: "Desenvolvemos uma solução usando o urbanismo tático para manutenção urbana e conseguimos o 1° lugar.",
+      image: kaririImg,
+      date: "2022"
+    },
+    {
+      id: 3,
+      title: "Hackathon Suape",
+      description: "Projeto com maior impacto social, com o projeto SUAPE Vision.",
+      image: suapeImg,
+      date: "2024"
+    }
+  ];
+
+  const certifications = [
+    {
+      id: 1,
+      name: "React Native Specialist",
+      issuer: "Meta",
+      link: "https://www.coursera.org/account/accomplishments/certificate/example"
+    },
+    {
+      id: 2,
+      name: "Full Stack Developer",
+      issuer: "Alura",
+      link: "https://www.alura.com.br/certificate/example"
+    },
+    {
+      id: 3,
+      name: "UI/UX Design",
+      issuer: "Google",
+      link: "https://www.coursera.org/account/accomplishments/certificate/example"
+    },
+    {
+      id: 4,
+      name: "Python para Data Science",
+      issuer: "Udemy",
+      link: "https://www.udemy.com/certificate/example"
+    }
+  ];
 
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
@@ -337,7 +632,7 @@ const App: React.FC = () => {
           </About>
         </Section>
         <ExpSection
-          as={motion.p}
+          as={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.7 }}
@@ -392,8 +687,81 @@ const App: React.FC = () => {
             </ExpItem>
           </ExpList>
         </ExpSection>
+
+        {/* Seção de Projetos */}
+        <ProjectsSection
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
+          <ProjectsTitle>PROJETOS</ProjectsTitle>
+          <ProjectsGrid>
+            {projects.map((project) => (
+              <ProjectCard key={project.id}>
+                <ProjectImage src={project.image} alt={project.title} />
+                <ProjectContent>
+                  <ProjectTitle>{project.title}</ProjectTitle>
+                  <ProjectDescription>{project.description}</ProjectDescription>
+                  <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
+                    Ver projeto →
+                  </ProjectLink>
+                </ProjectContent>
+              </ProjectCard>
+            ))}
+          </ProjectsGrid>
+        </ProjectsSection>
+
+        {/* Seção de Premiações */}
+        <AwardsSection
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
+          <AwardsTitle>PREMIAÇÕES</AwardsTitle>
+          <AwardsGrid>
+            {awards.map((award) => (
+              <AwardCard key={award.id}>
+                <AwardImage src={award.image} alt={award.title} />
+                <AwardContent>
+                  <AwardTitle>{award.title}</AwardTitle>
+                  <AwardDescription>{award.description}</AwardDescription>
+                  <AwardDate>{award.date}</AwardDate>
+                </AwardContent>
+              </AwardCard>
+            ))}
+          </AwardsGrid>
+        </AwardsSection>
+
+        {/* Seção de Certificações */}
+        <CertificationsSection
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
+          <CertificationsTitle>CERTIFICAÇÕES</CertificationsTitle>
+          <CertificationsList>
+            {certifications.map((cert) => (
+              <CertificationItem key={cert.id}>
+                <CertificationIcon>
+                  <CertIconImg src={certificateIcon} alt="Certificado" />
+                </CertificationIcon>
+                <CertificationInfo>
+                  <CertificationName>{cert.name}</CertificationName>
+                  <CertificationIssuer>{cert.issuer}</CertificationIssuer>
+                </CertificationInfo>
+                <CertificationLink href={cert.link} target="_blank" rel="noopener noreferrer">
+                  →
+                </CertificationLink>
+              </CertificationItem>
+            ))}
+          </CertificationsList>
+        </CertificationsSection>
+
         <SkillsSection
-          as={motion.p}
+          as={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -421,7 +789,7 @@ const App: React.FC = () => {
           </SkillsContainer>
         </SkillsSection>
         <LanguagesSection
-          as={motion.p}
+          as={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
@@ -440,7 +808,7 @@ const App: React.FC = () => {
           </LanguagesList>
         </LanguagesSection>
         <LinksSection
-          as={motion.p}
+          as={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.9 }}
