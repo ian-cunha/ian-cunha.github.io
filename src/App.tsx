@@ -565,6 +565,12 @@ const App: React.FC = () => {
 
   const certifications = [
     {
+      id: 0,
+      name: "Análise de desenvolvimento de Sistemas",
+      issuer: "Estácio de Sá",
+      link: "https://consultadiploma.estacio.br/diploma/163.163.49aebf5a164f"
+    },
+    {
       id: 1,
       name: "React Native",
       issuer: "DIO",
