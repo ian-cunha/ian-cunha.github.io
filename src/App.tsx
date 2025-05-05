@@ -803,7 +803,7 @@ const App: React.FC = () => {
         >
           <LanguagesTitle>IDIOMAS</LanguagesTitle>
           <LanguagesList>
-            <LanguageItem data-tooltip="Fluente">
+            <LanguageItem data-tooltip="Nativo">
               <img alt="Português" src={portugueseIcon} />
             </LanguageItem>
             <LanguageItem data-tooltip="Intermediário">
