@@ -31,6 +31,7 @@ import suapeImg from './assets/awards/suapevisionpremio.png';
 
 // Ícone para certificações
 import certificateIcon from './assets/certificate.svg';
+import certificaUniversity from './assets/RVDD.pdf';
 
 const lightTheme = {
   background: '#ffffff',
@@ -568,7 +569,7 @@ const App: React.FC = () => {
       id: 0,
       name: "Análise de desenvolvimento de Sistemas",
       issuer: "Estácio de Sá",
-      link: "https://consultadiploma.estacio.br/diploma/163.163.49aebf5a164f"
+      link: certificaUniversity
     },
     {
       id: 1,
