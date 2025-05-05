@@ -566,27 +566,27 @@ const App: React.FC = () => {
   const certifications = [
     {
       id: 1,
-      name: "React Native Specialist",
-      issuer: "Meta",
-      link: "https://www.coursera.org/account/accomplishments/certificate/example"
+      name: "React Native",
+      issuer: "DIO",
+      link: "https://hermes.dio.me/certificates/TZIYOE9I.pdf"
     },
     {
       id: 2,
-      name: "Full Stack Developer",
+      name: "React Developer",
       issuer: "Alura",
-      link: "https://www.alura.com.br/certificate/example"
+      link: "https://cursos.alura.com.br/certificate/0d544f0d-713e-47b5-9195-fa1021cb8487"
     },
     {
       id: 3,
-      name: "UI/UX Design",
-      issuer: "Google",
-      link: "https://www.coursera.org/account/accomplishments/certificate/example"
+      name: "JavaScript",
+      issuer: "Alura",
+      link: "https://cursos.alura.com.br/certificate/7656eeae-e87c-4b4d-8e74-4e856776b323"
     },
     {
       id: 4,
-      name: "Python para Data Science",
-      issuer: "Udemy",
-      link: "https://www.udemy.com/certificate/example"
+      name: "Java Developer",
+      issuer: "DIO",
+      link: "https://hermes.dio.me/certificates/WP98HIS8.pdf"
     }
   ];
 
@@ -627,7 +627,7 @@ const App: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            Desenvolvedor Mobile e Full Stack com sólida expertise em React Native, React, Python e NoSQL.
+            Desenvolvedor Mobile e Full Stack com sólida expertise em React Native, React, Java, Python e NoSQL.
             Especializado no desenvolvimento de soluções digitais inovadoras, desde aplicativos móveis e sistemas robustos até landing pages de alta conversão. Apaixonado por transformar ideias em produtos funcionais, com foco em usabilidade, design intuitivo e desempenho excepcional.
           </About>
         </Section>
