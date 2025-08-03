@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { motion } from 'framer-motion';
 
-// Importações existentes
+// Importações SVG
 import verified from './assets/verified.svg';
 import reactnative from './assets/react-native.svg';
-import javascript from './assets/javascript.svg';
-import figma from './assets/figma.svg';
+import typescript from './assets/typescript.svg';
 import sql from './assets/sql.svg';
-import python from './assets/python.svg';
+import linux from './assets/linux.svg';
 import java from './assets/java.svg';
 import englishIcon from './assets/english.svg';
 import portugueseIcon from './assets/portuguese.svg';
@@ -494,6 +493,24 @@ const CertificationLink = styled.a`
   }
 `;
 
+const MoreProjectsButton = styled.a`
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: ${(props) => props.theme.accent};
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    filter: brightness(0.9);
+  }
+`;
+
 const ThemeToggleButton = styled.button`
   position: absolute;
   top: 1rem;
@@ -579,7 +596,7 @@ const App: React.FC = () => {
     },
     {
       id: 2,
-      name: "React Developer",
+      name: "ReactJS",
       issuer: "Alura",
       link: "https://cursos.alura.com.br/certificate/0d544f0d-713e-47b5-9195-fa1021cb8487"
     },
@@ -594,6 +611,30 @@ const App: React.FC = () => {
       name: "Java Developer",
       issuer: "DIO",
       link: "https://hermes.dio.me/certificates/WP98HIS8.pdf"
+    },
+    {
+      id: 5,
+      name: "Servidor de Arquivos com Linux",
+      issuer: "DIO",
+      link: "https://hermes.dio.me/certificates/LJ6NQZQQ.pdf"
+    },
+    {
+      id: 6,
+      name: "Servidor Web com Linux",
+      issuer: "DIO",
+      link: "https://hermes.dio.me/certificates/MCK29RRW.pdf"
+    },
+    {
+      id: 7,
+      name: "Servidor de Banco de Dados com Linux",
+      issuer: "DIO",
+      link: "https://hermes.dio.me/certificates/ZOKY9YLQ.pdf"
+    },
+    {
+      id: 8,
+      name: "Infraestrutura como Código",
+      issuer: "DIO",
+      link: "https://hermes.dio.me/certificates/SJ8YNNCM.pdf"
     }
   ];
 
@@ -634,8 +675,13 @@ const App: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            Desenvolvedor Mobile e Full Stack com sólida expertise em React Native, React, Java, Python e NoSQL.
-            Especializado no desenvolvimento de soluções digitais inovadoras, desde aplicativos móveis e sistemas robustos até landing pages de alta conversão. Apaixonado por transformar ideias em produtos funcionais, com foco em usabilidade, design intuitivo e desempenho excepcional.
+            Meu nome é Ian Cunha, sou desenvolvedor e moro em Recife.
+            Tenho uma grande paixão por usar a tecnologia para gerar impacto e, em 2024,
+            tive a honra de ser finalista do Prêmio Innovare pelo meu trabalho.
+            Além da minha atuação profissional, dedico meu tempo como programador voluntário
+            em uma organização não governamental. No momento, meu principal objetivo é construir
+            minha estabilidade financeira para, assim, realizar meu sonho de conhecer o mundo.
+            Nas horas vagas, gosto de treinar, ouvir música e jogar um pouco.
           </About>
         </Section>
         <ExpSection
@@ -648,12 +694,13 @@ const App: React.FC = () => {
           <ExpList>
             <ExpItem>
               <ExpDetails>
-                <JobTitle>Desenvolvedor Full Stack/Mobile</JobTitle>
+                <JobTitle>Desenvolvedor Full Stack</JobTitle>
                 <JobCompany>Real Estate AI Planner</JobCompany>
                 <JobDate>mai de 2024 - o momento</JobDate>
                 <JobDesc>
-                  Desenvolvedor React Native, React, PHP e UX/UI Designer,
-                  focado na criação de soluções digitais inovadoras.
+                  Desenvolvedor focado na criação de soluções digitais inovadoras.
+                  Desenvolvendo sites modelos integrados com API do sistema da empresa, landing pages e aplicativo mobile.
+                  Tecnologias usadas React Native, NextJS, ReactJS, TypeScript e outros.
                 </JobDesc>
               </ExpDetails>
             </ExpItem>
@@ -678,17 +725,6 @@ const App: React.FC = () => {
                   Desenvolvimento Web e UI/UX focado em landing pages imobiliárias em
                   PHP/JavaScript. Fazendo integrações, manutenção e colaborando com
                   design e marketing.
-                </JobDesc>
-              </ExpDetails>
-            </ExpItem>
-            <ExpItem>
-              <ExpDetails>
-                <JobTitle>Designer</JobTitle>
-                <JobCompany>Academia Superação</JobCompany>
-                <JobDate>out de 2018 - dez de 2020</JobDate>
-                <JobDesc>
-                  Atuando em criação de peças para redes sociais e edição de vídeos,
-                  ferramentas usadas: Photoshop, Illustrator, Premiere entre outras.
                 </JobDesc>
               </ExpDetails>
             </ExpItem>
@@ -717,6 +753,13 @@ const App: React.FC = () => {
               </ProjectCard>
             ))}
           </ProjectsGrid>
+          <MoreProjectsButton
+            href="https://www.linkedin.com/in/iancunha/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver mais projetos
+          </MoreProjectsButton>
         </ProjectsSection>
 
         {/* Seção de Premiações */}
@@ -765,6 +808,13 @@ const App: React.FC = () => {
               </CertificationItem>
             ))}
           </CertificationsList>
+          <MoreProjectsButton
+            href="https://www.linkedin.com/in/iancunha/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver mais certificações
+          </MoreProjectsButton>
         </CertificationsSection>
 
         <SkillsSection
@@ -779,13 +829,10 @@ const App: React.FC = () => {
               <SkillImg alt="React Native" src={reactnative} />
             </SkillItem>
             <SkillItem>
-              <SkillImg alt="Python" src={python} />
+              <SkillImg alt="Linux" src={linux} />
             </SkillItem>
             <SkillItem>
-              <SkillImg alt="JavaScript" src={javascript} />
-            </SkillItem>
-            <SkillItem>
-              <SkillImg alt="Figma" src={figma} />
+              <SkillImg alt="TypeScript" src={typescript} />
             </SkillItem>
             <SkillItem>
               <SkillImg alt="SQL" src={sql} />
