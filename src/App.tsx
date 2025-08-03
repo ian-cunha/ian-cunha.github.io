@@ -632,9 +632,15 @@ const App: React.FC = () => {
     },
     {
       id: 8,
-      name: "Infraestrutura como Código",
+      name: "Infra. como Código, Estrutura de Usuários",
       issuer: "DIO",
       link: "https://hermes.dio.me/certificates/SJ8YNNCM.pdf"
+    },
+    {
+      id: 9,
+      name: "Infra. como Código, Servidor Web (Apache2)",
+      issuer: "DIO",
+      link: "https://hermes.dio.me/certificates/78EDRCZI.pdf"
     }
   ];
 
