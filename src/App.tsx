@@ -560,17 +560,17 @@ const App: React.FC = () => {
   const awards = [
     {
       id: 1,
-      title: "Prêmio Innovare",
-      description: "Finalista do Prêmio Innovare na categoria Justiça e Cidadania com o projeto Fenix Connect.",
-      image: innovareImg,
-      date: "2024"
-    },
-    {
-      id: 2,
       title: "Hackathon Cidadão 9.0",
       description: "Desenvolvemos uma solução usando o urbanismo tático para manutenção urbana e conseguimos o 1° lugar.",
       image: kaririImg,
       date: "2022"
+    },
+    {
+      id: 2,
+      title: "Prêmio Innovare",
+      description: "Finalista do Prêmio Innovare na categoria Justiça e Cidadania com o projeto Fenix Connect.",
+      image: innovareImg,
+      date: "2024"
     },
     {
       id: 3,
@@ -684,54 +684,7 @@ const App: React.FC = () => {
             Nas horas vagas, gosto de treinar, ouvir música e jogar um pouco.
           </About>
         </Section>
-        <ExpSection
-          as={motion.div}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.7 }}
-        >
-          <ExpTitle>EXPERIÊNCIAS</ExpTitle>
-          <ExpList>
-            <ExpItem>
-              <ExpDetails>
-                <JobTitle>Desenvolvedor Full Stack</JobTitle>
-                <JobCompany>Real Estate AI Planner</JobCompany>
-                <JobDate>mai de 2024 - o momento</JobDate>
-                <JobDesc>
-                  Desenvolvedor focado na criação de soluções digitais inovadoras.
-                  Desenvolvendo sites modelos integrados com API do sistema da empresa, landing pages e aplicativo mobile.
-                  Tecnologias usadas React Native, NextJS, ReactJS, TypeScript e outros.
-                </JobDesc>
-              </ExpDetails>
-            </ExpItem>
-            <ExpItem>
-              <ExpDetails>
-                <JobTitle>Desenvolvedor Frontend</JobTitle>
-                <JobCompany>Marta Inteligência Imobiliária</JobCompany>
-                <JobDate>dez de 2021 - out de 2024</JobDate>
-                <JobDesc>
-                  Desenvolvimento Web e UI/UX focado em landing pages imobiliárias, React,
-                  JavaScript, Bootstrap, Axios e PHP para criar sites responsivos e funcionais.
-                  Fazendo integrações, manutenção e colaborando com design e marketing.
-                </JobDesc>
-              </ExpDetails>
-            </ExpItem>
-            <ExpItem>
-              <ExpDetails>
-                <JobTitle>Estágiario</JobTitle>
-                <JobCompany>Marta Inteligência Imobiliária</JobCompany>
-                <JobDate>jan de 2021 - dez de 2021</JobDate>
-                <JobDesc>
-                  Desenvolvimento Web e UI/UX focado em landing pages imobiliárias em
-                  PHP/JavaScript. Fazendo integrações, manutenção e colaborando com
-                  design e marketing.
-                </JobDesc>
-              </ExpDetails>
-            </ExpItem>
-          </ExpList>
-        </ExpSection>
 
-        {/* Seção de Projetos */}
         <ProjectsSection
           as={motion.div}
           initial={{ opacity: 0 }}
@@ -762,7 +715,6 @@ const App: React.FC = () => {
           </MoreProjectsButton>
         </ProjectsSection>
 
-        {/* Seção de Premiações */}
         <AwardsSection
           as={motion.div}
           initial={{ opacity: 0 }}
@@ -784,7 +736,6 @@ const App: React.FC = () => {
           </AwardsGrid>
         </AwardsSection>
 
-        {/* Seção de Certificações */}
         <CertificationsSection
           as={motion.div}
           initial={{ opacity: 0 }}
@@ -842,6 +793,54 @@ const App: React.FC = () => {
             </SkillItem>
           </SkillsContainer>
         </SkillsSection>
+
+        <ExpSection
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
+          <ExpTitle>EXPERIÊNCIAS</ExpTitle>
+          <ExpList>
+            <ExpItem>
+              <ExpDetails>
+                <JobTitle>Desenvolvedor Full Stack</JobTitle>
+                <JobCompany>Real Estate AI Planner</JobCompany>
+                <JobDate>mai de 2024 - o momento</JobDate>
+                <JobDesc>
+                  Desenvolvedor focado na criação de soluções digitais inovadoras.
+                  Desenvolvendo sites modelos integrados com API do sistema da empresa, landing pages e aplicativo mobile.
+                  Tecnologias usadas React Native, NextJS, ReactJS, TypeScript e outros.
+                </JobDesc>
+              </ExpDetails>
+            </ExpItem>
+            <ExpItem>
+              <ExpDetails>
+                <JobTitle>Desenvolvedor Frontend</JobTitle>
+                <JobCompany>Marta Inteligência Imobiliária</JobCompany>
+                <JobDate>dez de 2021 - out de 2024</JobDate>
+                <JobDesc>
+                  Desenvolvimento Web e UI/UX focado em landing pages imobiliárias, React,
+                  JavaScript, Bootstrap, Axios e PHP para criar sites responsivos e funcionais.
+                  Fazendo integrações, manutenção e colaborando com design e marketing.
+                </JobDesc>
+              </ExpDetails>
+            </ExpItem>
+            <ExpItem>
+              <ExpDetails>
+                <JobTitle>Estágiario</JobTitle>
+                <JobCompany>Marta Inteligência Imobiliária</JobCompany>
+                <JobDate>jan de 2021 - dez de 2021</JobDate>
+                <JobDesc>
+                  Desenvolvimento Web e UI/UX focado em landing pages imobiliárias em
+                  PHP/JavaScript. Fazendo integrações, manutenção e colaborando com
+                  design e marketing.
+                </JobDesc>
+              </ExpDetails>
+            </ExpItem>
+          </ExpList>
+        </ExpSection>
+
         <LanguagesSection
           as={motion.div}
           initial={{ opacity: 0 }}
