@@ -614,30 +614,36 @@ const App: React.FC = () => {
     },
     {
       id: 5,
+      name: "Linux Fundamentals",
+      issuer: "DIO",
+      link: "https://hermes.dio.me/certificates/PIDWJ4SI.pdf"
+    },
+    {
+      id: 6,
       name: "Servidor de Arquivos com Linux",
       issuer: "DIO",
       link: "https://hermes.dio.me/certificates/LJ6NQZQQ.pdf"
     },
     {
-      id: 6,
+      id: 7,
       name: "Servidor Web com Linux",
       issuer: "DIO",
       link: "https://hermes.dio.me/certificates/MCK29RRW.pdf"
     },
     {
-      id: 7,
+      id: 8,
       name: "Servidor de Banco de Dados com Linux",
       issuer: "DIO",
       link: "https://hermes.dio.me/certificates/ZOKY9YLQ.pdf"
     },
     {
-      id: 8,
+      id: 9,
       name: "Infra. como Código, Estrutura de Usuários",
       issuer: "DIO",
       link: "https://hermes.dio.me/certificates/SJ8YNNCM.pdf"
     },
     {
-      id: 9,
+      id: 10,
       name: "Infra. como Código, Servidor Web (Apache2)",
       issuer: "DIO",
       link: "https://hermes.dio.me/certificates/78EDRCZI.pdf"
