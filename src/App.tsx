@@ -36,8 +36,9 @@ const lightTheme = {
   background: '#ffffff',
   text: '#000000',
   secondaryText: '#666666',
-  accent: '#00ff00',
+  accent: '#006400',
   card: '#f5f5f5',
+  buttonText: '#ffffff',
 };
 
 const darkTheme = {
@@ -46,6 +47,7 @@ const darkTheme = {
   secondaryText: '#a1a1aa',
   accent: '#00ff00',
   card: '#2a2a2a',
+  buttonText: '#000000',
 };
 
 const Main = styled(motion.main)`
@@ -498,7 +500,7 @@ const MoreProjectsButton = styled.a`
   margin-top: 1.5rem;
   padding: 0.5rem 1rem;
   background-color: ${(props) => props.theme.accent};
-  color: #000;
+  color: ${(props) => props.theme.buttonText};
   font-weight: 600;
   text-decoration: none;
   border-radius: 8px;
