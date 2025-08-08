@@ -41,8 +41,8 @@ const App: React.FC = () => {
 
         <Projects />
         <Awards />
-        <Certifications />
         <Skills />
+        <Certifications />
         <Experiences />
         <Languages />
         <Links />

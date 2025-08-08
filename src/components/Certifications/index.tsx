@@ -13,9 +13,9 @@ const certificationsData = [
     },
     {
         id: 1,
-        name: "React Native",
+        name: "Formação Linux",
         issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/TZIYOE9I.pdf"
+        link: "https://hermes.dio.me/certificates/PIDWJ4SI.pdf"
     },
     {
         id: 2,
@@ -25,48 +25,36 @@ const certificationsData = [
     },
     {
         id: 3,
-        name: "JavaScript",
-        issuer: "Alura",
-        link: "https://cursos.alura.com.br/certificate/7656eeae-e87c-4b4d-8e74-4e856776b323"
+        name: "React Native",
+        issuer: "DIO",
+        link: "https://hermes.dio.me/certificates/TZIYOE9I.pdf"
     },
     {
         id: 4,
-        name: "Java Developer",
-        issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/WP98HIS8.pdf"
-    },
-    {
-        id: 5,
-        name: "Linux Fundamentals",
-        issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/PIDWJ4SI.pdf"
-    },
-    {
-        id: 6,
         name: "Servidor de Arquivos com Linux",
         issuer: "DIO",
         link: "https://hermes.dio.me/certificates/LJ6NQZQQ.pdf"
     },
     {
-        id: 7,
+        id: 5,
         name: "Servidor Web com Linux",
         issuer: "DIO",
         link: "https://hermes.dio.me/certificates/MCK29RRW.pdf"
     },
     {
-        id: 8,
+        id: 6,
         name: "Servidor de Banco de Dados com Linux",
         issuer: "DIO",
         link: "https://hermes.dio.me/certificates/ZOKY9YLQ.pdf"
     },
     {
-        id: 9,
+        id: 7,
         name: "Infra. como Código, Estrutura de Usuários",
         issuer: "DIO",
         link: "https://hermes.dio.me/certificates/SJ8YNNCM.pdf"
     },
     {
-        id: 10,
+        id: 8,
         name: "Infra. como Código, Servidor Web (Apache2)",
         issuer: "DIO",
         link: "https://hermes.dio.me/certificates/78EDRCZI.pdf"

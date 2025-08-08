@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import * as S from './Skills.styles';
+
 import reactnative from '../../assets/react-native.svg';
 import linux from '../../assets/linux.svg';
+import docker from '../../assets/docker.svg';
 import typescript from '../../assets/typescript.svg';
 import sql from '../../assets/sql.svg';
 import java from '../../assets/java.svg';
@@ -12,10 +14,13 @@ const Skills: React.FC = () => (
         <S.SkillsTitle>PRINCIPAIS HABILIDADES</S.SkillsTitle>
         <S.SkillsContainer>
             <S.SkillItem>
-                <S.SkillImg alt="React Native" src={reactnative} />
+                <S.SkillImg alt="React JS/Native" src={reactnative} />
             </S.SkillItem>
             <S.SkillItem>
                 <S.SkillImg alt="Linux" src={linux} />
+            </S.SkillItem>
+            <S.SkillItem>
+                <S.SkillImg alt="Docker" src={docker} />
             </S.SkillItem>
             <S.SkillItem>
                 <S.SkillImg alt="TypeScript" src={typescript} />
