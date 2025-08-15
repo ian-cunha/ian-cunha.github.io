@@ -25,9 +25,33 @@ const certificationsData = [
     },
     {
         id: 3,
-        name: "React",
+        name: "React com JavaScript",
         issuer: "Alura",
         link: "https://cursos.alura.com.br/user/contatoiancunha/course/react-desenvolvendo-javascript/formalCertificate"
+    },
+    {
+        id: 4,
+        name: "Fundamentos .NET",
+        issuer: "DIO",
+        link: "https://hermes.dio.me/certificates/B6GMLZJG.pdf"
+    },
+    {
+        id: 5,
+        name: "Fundamentos Java",
+        issuer: "DIO",
+        link: "https://hermes.dio.me/certificates/KRSMR2KN.pdf"
+    },
+    {
+        id: 6,
+        name: "SQL com MySQL",
+        issuer: "DIO",
+        link: "https://cursos.alura.com.br/user/contatoiancunha/course/mysql-manipule-dados-com-sql/formalCertificate"
+    },
+    {
+        id: 7,
+        name: "Full Stack com React",
+        issuer: "DIO",
+        link: "https://cursos.alura.com.br/user/contatoiancunha/course/react-crie-primeira-pagina-web/formalCertificate"
     }
 ];
 
