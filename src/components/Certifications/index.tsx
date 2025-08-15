@@ -25,7 +25,7 @@ const certificationsData = [
     },
     {
         id: 3,
-        name: "ReactJS",
+        name: "React",
         issuer: "Alura",
         link: "https://cursos.alura.com.br/user/contatoiancunha/course/react-desenvolvendo-javascript/formalCertificate"
     }
