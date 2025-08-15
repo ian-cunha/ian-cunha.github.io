@@ -33,7 +33,7 @@ const certificationsData = [
 
 const Certifications: React.FC = () => (
     <S.CertificationsSection as={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 0.7 }}>
-        <S.CertificationsTitle>CERTIFICAÇÕES</S.CertificationsTitle>
+        <S.CertificationsTitle>FORMAÇÕES | CERTIFICAÇÕES</S.CertificationsTitle>
         <S.CertificationsList>
             {certificationsData.map((cert) => (
                 <S.CertificationItem key={cert.id}>
