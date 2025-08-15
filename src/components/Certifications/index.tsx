@@ -27,43 +27,7 @@ const certificationsData = [
         id: 3,
         name: "ReactJS",
         issuer: "Alura",
-        link: "https://cursos.alura.com.br/certificate/0d544f0d-713e-47b5-9195-fa1021cb8487"
-    },
-    {
-        id: 4,
-        name: "React Native",
-        issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/TZIYOE9I.pdf"
-    },
-    {
-        id: 5,
-        name: "Servidor de Arquivos com Linux",
-        issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/LJ6NQZQQ.pdf"
-    },
-    {
-        id: 6,
-        name: "Servidor Web com Linux",
-        issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/MCK29RRW.pdf"
-    },
-    {
-        id: 7,
-        name: "Servidor de Banco de Dados com Linux",
-        issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/ZOKY9YLQ.pdf"
-    },
-    {
-        id: 8,
-        name: "Infra. como Código, Estrutura de Usuários",
-        issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/SJ8YNNCM.pdf"
-    },
-    {
-        id: 9,
-        name: "Infra. como Código, Servidor Web (Apache2)",
-        issuer: "DIO",
-        link: "https://hermes.dio.me/certificates/78EDRCZI.pdf"
+        link: "https://cursos.alura.com.br/user/contatoiancunha/course/react-desenvolvendo-javascript/formalCertificate"
     }
 ];
 
