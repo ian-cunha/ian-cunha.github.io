@@ -7,8 +7,8 @@ import certificaUniversity from '../../assets/RVDD.pdf';
 const certificationsData = [
     {
         id: 0,
-        name: "Análise de desenvolvimento de Sistemas",
-        issuer: "Estácio de Sá",
+        name: "Curso Superior em A.D.S.",
+        issuer: "Faculdade Estácio de Sá",
         link: certificaUniversity
     },
     {

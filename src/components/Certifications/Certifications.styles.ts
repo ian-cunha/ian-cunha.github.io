@@ -15,19 +15,22 @@ export const CertificationsList = styled.ul`
   list-style: none;
   padding: 0;
   margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 `;
 
 export const CertificationItem = styled.li`
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
   padding: 0.75rem 1rem;
   background: ${(props) => props.theme.card};
   border-radius: 8px;
   transition: transform 0.2s ease;
+  min-width: 0;
 
   &:hover {
-    transform: translateX(5px);
+    transform: translateY(-5px);
   }
 `;
 
@@ -47,6 +50,7 @@ export const CertIconImg = styled.img`
 
 export const CertificationInfo = styled.div`
   flex: 1;
+  min-width: 0;
 `;
 
 export const CertificationName = styled.h3`
