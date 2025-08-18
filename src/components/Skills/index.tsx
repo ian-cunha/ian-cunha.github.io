@@ -6,7 +6,7 @@ import reactnative from '../../assets/react-native.svg';
 import linux from '../../assets/linux.svg';
 import docker from '../../assets/docker.svg';
 import typescript from '../../assets/typescript.svg';
-import sql from '../../assets/sql.svg';
+import kubernetes from '../../assets/kubernetes.svg';
 import java from '../../assets/java.svg';
 
 const Skills: React.FC = () => (
@@ -17,16 +17,16 @@ const Skills: React.FC = () => (
                 <S.SkillImg alt="React JS/Native" src={reactnative} />
             </S.SkillItem>
             <S.SkillItem>
+                <S.SkillImg alt="TypeScript" src={typescript} />
+            </S.SkillItem>
+            <S.SkillItem>
                 <S.SkillImg alt="Linux" src={linux} />
             </S.SkillItem>
             <S.SkillItem>
                 <S.SkillImg alt="Docker" src={docker} />
             </S.SkillItem>
             <S.SkillItem>
-                <S.SkillImg alt="TypeScript" src={typescript} />
-            </S.SkillItem>
-            <S.SkillItem>
-                <S.SkillImg alt="SQL" src={sql} />
+                <S.SkillImg alt="Kubernetes" src={kubernetes} />
             </S.SkillItem>
             <S.SkillItem>
                 <S.SkillImg alt="Java" src={java} />
