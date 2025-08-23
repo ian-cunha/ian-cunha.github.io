@@ -8,13 +8,11 @@ const Experiences: React.FC = () => (
         <S.ExpList>
             <S.ExpItem>
                 <S.ExpDetails>
-                    <S.JobTitle>Desenvolvedor Full Stack</S.JobTitle>
+                    <S.JobTitle>Desenvolvedor FullStack</S.JobTitle>
                     <S.JobCompany>Real Estate AI Planner</S.JobCompany>
                     <S.JobDate>mai de 2024 - o momento</S.JobDate>
                     <S.JobDesc>
-                        Desenvolvedor focado na criação de soluções digitais inovadoras.
-                        Desenvolvendo sites modelos integrados com API do sistema da empresa, landing pages e aplicativo mobile.
-                        Tecnologias usadas React Native, NextJS, ReactJS, TypeScript e outros.
+                        Desenvolvedor focado na criação de soluções digitais, com sólida experiência em TypeScript, React.js, Next.js, React Native, Expo Go, Vercel entre outras. Responsável por todo o ciclo de vida do desenvolvimento, incluindo testes, build, deploy e práticas de DevOps, para entregar aplicações web e mobile de alta performance.
                     </S.JobDesc>
                 </S.ExpDetails>
             </S.ExpItem>

@@ -7,11 +7,7 @@ const About: React.FC = () => (
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.6 }}
     >
-        Sou desenvolvedor apaixonado por transformar ideias em soluções tecnológicas de impacto. Em 2024, tive a honra de ser finalista do Prêmio Innovare pelo meu trabalho inovador, reconhecimento que reforçou minha missão de usar a tecnologia como ferramenta de transformação social e profissional.
-        Além da minha atuação no mercado, atuo como programador voluntário em uma ONG, contribuindo para causas que geram impacto real na vida das pessoas.
-        <br /><br />
-        Atualmente, meu foco é consolidar minha estabilidade financeira e estruturar minha carreira para realizar um grande sonho: conhecer o mundo.
-        Fora do código, gosto de treinar, ouvir música e aproveitar momentos de descontração jogando.
+        Como desenvolvedor, busco criar tecnologia com impacto social, um compromisso que me rendeu a indicação como finalista do Prêmio Innovare em 2024. Meu trabalho é pautado pela mentalidade DevOps, focando na entrega de soluções eficientes e de alta qualidade, dedicação que aplico também como voluntário em uma ONG. Hoje, meu objetivo é construir uma carreira sólida que me permita viajar o mundo. Nas horas vagas, gosto de treinar, ouvir música e aprender algo novo.
     </S.About>
 );
 
